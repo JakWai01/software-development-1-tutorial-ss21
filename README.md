@@ -1,7 +1,7 @@
 # software-development-1-tutorial-ss21
 
 ## Content
-- ...
+- Primitive Data Types
 
 ## Examination Hints
 - Practice on [CodingBat](https://codingbat.com/java)
