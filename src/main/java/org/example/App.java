@@ -18,7 +18,7 @@ public class App {
         byte biss = 127;
         System.out.println(biss);
 
-        // 0000 0000
+        // Kommazahlen
         float note = (float)1.0;
         System.out.println(note);
 
