@@ -70,12 +70,17 @@ public class App {
         // kleinen Datentyp "in grossen reinlegen" funktioniert (gross in klein quetschen hingegen nicht)
         byte klein = 2;
         int gross;
-
         gross = klein;
+
+        // Wir koennen die Folgen der Typkonversion akzeptieren und trozdem "casten"
+        // (dabei kann aber alles moegliche Passieren, siehe Ariane)
+        int zahl1 = 1200;
+        byte zahl2;
+        // zahl2 = zahl1 ERROR
+        zahl2 = (byte)zahl1; // Das Ergebnis ist trotzdem unbrauchbar, aber wir koennen es tun
 
         // Figure 129
         float float2Power31 = Integer.MAX_VALUE + 1f; // 2^31
-
         float floatDoubleMAX_VALUE = 2 * float2Power31 * float2Power31 - 1f; // 2^63 - 1
 
         // Ueber maximum, da float precision
