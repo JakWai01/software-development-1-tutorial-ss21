@@ -2,7 +2,7 @@ package org.example;
 
 public class App {
 
-    public static void main( String[] args ) {
+    public static void main(String[] args) {
 
         System.out.println("Hello World!");
 
@@ -19,7 +19,7 @@ public class App {
         System.out.println(biss);
 
         // Kommazahlen
-        float note = (float)1.0;
+        float note = (float) 1.0;
         System.out.println(note);
 
         // Wahr oder Falsch
@@ -45,7 +45,47 @@ public class App {
 
         // Concatenate Strings
         System.out.println("Jakob " + "ist " + "doof");
-        System.out.format("%s %s", "Jakob", "Waibel");
+        System.out.format("%s %s", "Jakob", "Waibel\n");
+
+        // int int a = 2;
+
+        // Camel Case
+        String autoPlakettenAufschriftsSimulator = "test";
+
+        // Normale Variable kann man aendern
+        int age = 19;
+        age = 20;
+
+        // ...konstante Werte nicht
+        final double pi = 3.141592653;
+
+        // pi = 3; ERROR
+
+        // Gross und Kleinschreibung matters! (Case sensitive)
+        int alter = 19;
+        int Alter = 20;
+
+        System.out.println(alter + " " + Alter);
+
+        // kleinen Datentyp "in grossen reinlegen" funktioniert (gross in klein quetschen hingegen nicht)
+        byte klein = 2;
+        int gross;
+
+        gross = klein;
+
+        // Figure 129
+        float float2Power31 = Integer.MAX_VALUE + 1f; // 2^31
+
+        float floatDoubleMAX_VALUE = 2 * float2Power31 * float2Power31 - 1f; // 2^63 - 1
+
+        // Ueber maximum, da float precision
+        System.out.format("   Float value: %f\n", floatDoubleMAX_VALUE);
+        System.out.println("Expected value: " + Long.MAX_VALUE);
+
+        // Komische Ergebnisse bei Fliesskommazahlen (Siehe Mathe 1)
+        for (int i = 0; i < 10; i++) {
+            System.out.println(3.1432334 * i);
+        }
     }
 }
 
