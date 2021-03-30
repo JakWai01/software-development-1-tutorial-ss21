@@ -54,7 +54,7 @@ public class App {
 
         // Normale Variable kann man aendern
         int age = 19;
-        age = 20;
+        age = 4;
 
         // ...konstante Werte nicht
         final double pi = 3.141592653;
@@ -91,6 +91,56 @@ public class App {
         for (int i = 0; i < 10; i++) {
             System.out.println(3.1432334 * i);
         }
+
+        // Unendlich viele Zahlen mit endlich vielen Bits darstellen?
+        double test = 1.8-0.1;
+        double test2 = 1.6+0.1;
+        System.out.println(test - test2);
+
+
+        boolean isTrue = true;
+        System.out.println(isTrue);
+
+        boolean value = (2 < 5 && (2 != 3)) || (true);
+        System.out.println(value);
+
+        if (!value) {
+            System.out.println("Ich bin im if!");
+        }
+        // age = 20
+        String drink;
+
+        if (age > 5 && age < 16) {
+            System.out.println("Sorry du pimpf! Fuer dich gibts nichts!");
+            drink = "Sprudel";
+        } else if (age > 5 && age < 18) {
+            System.out.println("Hier hast du Bier! Mehr geht nicht!");
+            drink = "Bier";
+        } else {
+            System.out.println("Hier, dein White Russian!");
+            drink = "Bacardi";
+        }
+
+        System.out.println(drink);
+
+        int temperature = 8;
+
+        if (temperature < 0) {
+            System.out.println("EIS EIS BABY");
+        } else if (temperature < 10) {
+            System.out.println("JACKE");
+        } else {
+            System.out.println("Geh raus wie du willst");
+        }
+
+        if (temperature < 0) {
+            System.out.println("Muetze");
+        } else if (temperature < 10) {
+            System.out.println("Jacke einpacken!");
+        } else {
+            System.out.println("Mach dir keinen Kopf, du koenntest Nackt gehen. Es ist warm!");
+        }
+
     }
 }
 
