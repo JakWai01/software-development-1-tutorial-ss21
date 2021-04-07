@@ -141,6 +141,63 @@ public class App {
             System.out.println("Mach dir keinen Kopf, du koenntest Nackt gehen. Es ist warm!");
         }
 
+
+        double dd = 3.4;
+        int into = (int)dd;
+        System.out.println(into);
+
+        int i2 = 300;
+        byte bito = (byte)300;
+        System.out.println(bito);
+
+        byte zah = (byte)128;
+        System.out.println(zah);
+
+        // switch
+        String drink2 = "Wodka";
+        switch(drink2) {
+            case "Bier": System.out.println(drink2 + " sollte Bier sein");
+                break;
+            case "Wodka": System.out.println(drink2 + " sollte Wodka sein");
+                break;
+            case "Wasser": System.out.println(drink2 + " sollte Wasser sein");
+                break;
+            default: System.out.println("Kein valides Getraenk");
+        }
+
+        switch(drink2) {
+            case "Bier" -> System.out.println("Bier");
+            case "Wodka" -> System.out.println("Wodka");
+            case "Wasser" -> System.out.println("Wasser");
+            default -> System.out.println("sadasdlkasdjasld");
+        }
+
+        // while
+        int count = 0;
+        while (count < 0) {
+            count++;
+            System.out.println("Na");
+        }
+
+        // do while
+        boolean nochmal_spielen;
+        do {
+            System.out.println("Batman");
+            count++;;
+        } while (count < 10);
+
+        int count2 = 0;
+        int countInnen = 0;
+
+        while(count2 < 10) {
+            count2++;
+            while (countInnen < 10) {
+                countInnen++;
+                System.out.println("HIHIHIHI");
+            }
+            System.out.println("--------");
+            countInnen = 0;
+        }
     }
 }
 
