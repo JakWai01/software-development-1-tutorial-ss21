@@ -2,6 +2,8 @@
 
 ## Content
 - Primitive Data Types
+- Conditionals
+- Loops
 
 ## Examination Hints
 - Practice on [CodingBat](https://codingbat.com/java)
