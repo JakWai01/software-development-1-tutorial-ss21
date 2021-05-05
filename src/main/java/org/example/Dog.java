@@ -1,7 +1,7 @@
 package org.example;
 
 public class Dog {
-    String name;
+    private String name;
     int age;
     String breed;
 
@@ -17,6 +17,11 @@ public class Dog {
 
     public String bark() {
        return "bark";
+    }
+
+    public String getName() {
+        System.out.println("Name wurde abgefragt");
+        return this.name;
     }
 
     public static void main(String[] args) {
