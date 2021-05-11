@@ -1,4 +1,4 @@
-package org.example.String;
+package org.example.string;
 
 public class String {
     java.lang.String text;

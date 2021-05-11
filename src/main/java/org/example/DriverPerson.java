@@ -1,6 +1,6 @@
 package org.example;
 // import other package
-import org.example.Inhabitants.Person;
+import org.example.inhabitants.Person;
 
 public class DriverPerson {
 

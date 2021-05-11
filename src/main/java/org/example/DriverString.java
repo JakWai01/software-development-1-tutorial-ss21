@@ -1,5 +1,5 @@
 package org.example;
-import org.example.String.String;
+import org.example.string.String;
 
 public class DriverString {
     public static void main(java.lang.String[] args) {

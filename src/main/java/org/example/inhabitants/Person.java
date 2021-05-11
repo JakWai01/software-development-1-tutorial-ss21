@@ -1,4 +1,4 @@
-package org.example.Inhabitants;
+package org.example.inhabitants;
 
 // class needs to be public to be accessed by the driver
 public class Person {
